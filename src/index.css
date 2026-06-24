@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1B3A5C;
+  --color-accent:  #2E7D9F;
+  --color-surface: #F7F9FB;
+  --color-dark:    #0D1B2A;
+  --color-text:    #1A1A2E;
+  --color-muted:   #64748B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-inter text-text bg-surface antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sora;
+  }
+}
+
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .pause-on-hover:hover .marquee-inner {
+    animation-play-state: paused;
+  }
+}
