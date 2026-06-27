@@ -870,6 +870,23 @@ export const services = [
     category: 'education',
     isCategoryLanding: true,
     lmsAppUrl: 'https://your-lms-app-url.com',
+    demos: [
+      {
+        title: 'Math Quiz Demo',
+        description: 'Test your knowledge of Mathematics.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/b5e52feb-c322-4ad3-a8d3-7fdc7facf52a',
+      },
+      {
+        title: 'CS Quiz Demo',
+        description: 'Test your knowledge of Computer Science.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/c966a50f-d17f-41ee-b186-c11e6bb4edee',
+      },
+      {
+        title: 'Science Quiz Demo',
+        description: 'Test your knowledge of General Science.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/6a885986-c77c-47fd-bb6c-bcdfc2580f5f',
+      },
+    ],
     description:
       'RPL Solutions delivers a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision. From live class scheduling to automated grading, every feature is built to reduce administrative overhead and put the focus back on teaching.',
     subServices: [

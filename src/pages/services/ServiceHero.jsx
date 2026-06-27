@@ -5,9 +5,9 @@ import imgAT from '@/assets/images/AT.jpg'
 import imgAerialAT from '@/assets/images/Aerial Photography AT.png'
 import imgOrtho from '@/assets/images/ORTHO PHOTO.jpg'
 import imgGIS from '@/assets/images/GIS DATA CONVERSION.jpg'
-import img3DBuilding from '@/assets/images/3D BUILDING MODEL.jpg'
-import img2DBuild from '@/assets/images/2D BUILD.png'
-import img2DBuild1 from '@/assets/images/2D BUILD 1.png'
+import imgStructuralBIM from '@/assets/images/Structural-BIM-image.jpeg'
+import imgPlanimetric from '@/assets/images/Plainmetric-image.jpeg'
+import imgRoadsUtilities from '@/assets/images/Roads-and-Utility-BIM-image.jpeg'
 
 // New images
 import imgSoftware from '@/assets/images/software.png'
@@ -31,12 +31,12 @@ const PLACEHOLDER = 'https://placehold.co/800x500/1B3A5C/FFFFFF?text=RPL+Solutio
 const SERVICE_IMAGES = {
   // Geospatial & BIM
   'aerial-triangulation': imgAerialAT,
-  'planimetric-mapping':  imgOrtho,
+  'planimetric-mapping':  imgPlanimetric,
   'gis-services':         imgGIS,
-  'structural-bim':       img3DBuilding,
-  'roads-utilities-bim':  img2DBuild1,
+  'structural-bim':       imgStructuralBIM,
+  'roads-utilities-bim':  imgRoadsUtilities,
   'scan-to-bim':          imgAT,
-  'cad-conversion':       img2DBuild,
+  'cad-conversion':       imgOrtho,
   // Software
   'software-development':    imgSoftware,
   'digital-cloud-solutions': imgCloudSol,
