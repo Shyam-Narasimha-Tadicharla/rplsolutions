@@ -16,7 +16,7 @@ export default function TeamSection() {
         <SectionHeading
           label="Our People"
           title="The Team Behind the Work"
-          subtitle="A multidisciplinary team of over 100 professionals spanning geospatial, BIM, engineering, and QA disciplines."
+          subtitle="A multidisciplinary team of over 100 professionals spanning software engineering, cloud, education, finance, and geospatial disciplines."
           center
           dark
           labelColor="text-purple-600"

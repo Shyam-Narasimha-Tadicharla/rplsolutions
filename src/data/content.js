@@ -110,175 +110,9 @@ export const serviceHighlights = [
   },
 ]
 
-// ── Services (11 full service pages) ─────────────────────────────────────────
+// ── Services — order: Software → Education → Financial → Geospatial ────────────
 export const services = [
-  {
-    id: 'aerial-triangulation',
-    name: 'Aerial Triangulation',
-    tagline: 'Precise spatial orientation for aerial imagery',
-    description:
-      'Aerial triangulation is the process of improving the spatial orientation of aerial imagery, providing exterior orientation parameters and highly accurate 3D coordinates. Our highly automated approach minimises manual intervention while maximising geometric accuracy across large project areas.',
-    bullets: [
-      'Exterior orientation parameters for all imagery blocks',
-      'Highly accurate 3D ground control point integration',
-      'Automated tie-point generation and bundle adjustment',
-      'Quality control reports with residual analysis',
-      'Compatible with UAV, manned aerial, and satellite imagery',
-    ],
-    faq: [
-      {
-        question: 'What imagery types do you support for aerial triangulation?',
-        answer:
-          'We support UAV (drone), manned aerial, and satellite imagery from all major sensor platforms including Leica, Vexcel, PhaseOne, and DJI.',
-      },
-      {
-        question: 'What accuracy can we expect?',
-        answer:
-          'Typical accuracies range from 1–3 × GSD horizontally and 1.5–4 × GSD vertically, depending on flight parameters and GCP distribution.',
-      },
-      {
-        question: 'Do you provide QC documentation?',
-        answer:
-          'Yes. Every project is delivered with a full quality control report including residual statistics, point cloud density, and coverage maps.',
-      },
-    ],
-  },
-  {
-    id: 'planimetric-mapping',
-    name: 'Planimetric Mapping',
-    tagline: 'Comprehensive base maps and 3D feature capture',
-    description:
-      'Planimetric mapping produces high-accuracy base maps for engineering, urban planning, and GIS applications. We capture 3D features from stereo models and satellite imagery, delivering comprehensive datasets in industry-standard formats.',
-    bullets: [
-      'Roads, driveways, and parking infrastructure',
-      'Buildings, structures, and site improvements',
-      'Tree lines, vegetation, and natural features',
-      'Hydrological features - streams, ponds, drainage',
-      'Utility infrastructure - poles, manholes, catch basins',
-      'Delivery in DGN, DWG, SHP, and GDB formats',
-    ],
-    faq: [
-      {
-        question: 'What scale of mapping do you produce?',
-        answer:
-          'We produce mapping from 1:500 urban detail to 1:10,000 regional scale, depending on source imagery GSD and project requirements.',
-      },
-      {
-        question: 'Can you integrate with existing GIS databases?',
-        answer:
-          'Yes. We deliver data structured to match your existing schema and coordinate reference system, ready for direct ingestion into Esri, QGIS, or CAD environments.',
-      },
-    ],
-  },
-  {
-    id: 'gis-services',
-    name: 'GIS Services',
-    tagline: 'Spatial databases, analysis, and custom GIS applications',
-    description:
-      'Our GIS team creates, manages, and analyses geospatial databases for government, infrastructure, and commercial clients. From cadastral mapping to custom application development, we deliver GIS solutions that drive informed decision-making.',
-    bullets: [
-      'Cadastral, parcel, and topographic mapping',
-      'Utility, geological, and LULC databases',
-      'Custom GIS application development',
-      'DBMS design and spatial database management',
-      'Geographic query, analysis, and visualisation',
-      'Integration with Esri ArcGIS, QGIS, and open platforms',
-    ],
-    faq: [
-      {
-        question: 'Can you build a custom web GIS application?',
-        answer:
-          'Yes. We develop web-based GIS applications using Esri ArcGIS Online, GeoPlatform, and open-source stacks (Leaflet, MapLibre) tailored to your workflow.',
-      },
-      {
-        question: 'Do you offer ongoing GIS database maintenance?',
-        answer:
-          'We offer both project-based delivery and ongoing managed GIS services, including regular data updates, QA, and user support.',
-      },
-    ],
-  },
-  {
-    id: 'structural-bim',
-    name: 'Structural BIM',
-    tagline: 'Concrete and steel structure models with design analysis',
-    description:
-      'RPL Solutions delivers detailed structural BIM models for concrete and steel construction projects. Based on client-supplied PDFs, CAD drawings, sketches, or site data, our structural models support design coordination, quantity take-off, and fabrication.',
-    bullets: [
-      'Concrete and steel structural Revit models',
-      'Modeled from PDFs, CAD, sketches, and site images',
-      'Structural observations and design analysis',
-      'Rebar and connection detailing',
-      'Clash detection with architectural and MEP models',
-      'IFC and STRUCAD-compatible export',
-    ],
-    faq: [
-      {
-        question: 'Do you model post-tensioned concrete structures?',
-        answer:
-          'Yes. We model post-tensioned slabs, transfer plates, and complex concrete geometries using Revit with appropriate structural analysis links.',
-      },
-      {
-        question: 'What is your typical turnaround for a structural BIM project?',
-        answer:
-          'For a standard mid-rise building, we deliver preliminary structural models within 2–3 weeks of receiving complete input documentation.',
-      },
-    ],
-  },
-  {
-    id: 'roads-utilities-bim',
-    name: 'Roads & Utilities BIM',
-    tagline: 'Infrastructure corridor BIM for roads and utilities',
-    description:
-      'RPL Solutions delivers full BIM models for road corridors and utility networks, supporting design, construction, and asset management. Our infrastructure models include pavement layers, drainage, earthworks, and complete wet and dry utility systems.',
-    bullets: [
-      'Full roadway corridor: pavement, medians, kerbs, sidewalks',
-      'Earthworks - cut, fill, and grading models',
-      'Traffic signs, signals, and street furniture',
-      'Wet utilities: water supply, sanitary sewer, stormwater',
-      'Dry utilities: MV/LV power, telecom ducting',
-      'Clash detection analysis and reporting',
-    ],
-    faq: [
-      {
-        question: 'What software do you use for infrastructure BIM?',
-        answer:
-          'We use Autodesk Civil 3D, Revit, and InfraWorks for road and utility corridor modeling, with deliverables in RVT, DWG, and IFC formats.',
-      },
-      {
-        question: 'Can you integrate survey data into the corridor model?',
-        answer:
-          'Yes. We incorporate LiDAR point clouds, aerial survey data, and field survey shots into the terrain model underpinning the corridor design.',
-      },
-    ],
-  },
-  {
-    id: 'cad-conversion',
-    name: 'CAD Conversion & Shop Drawings',
-    tagline: 'Raster to vector and PDF to CAD conversion at scale',
-    description:
-      'RPL Solutions converts legacy raster drawings, scanned documents, and PDF files into clean, structured CAD and GIS formats. We also produce construction shop drawings for roads and wet utilities from concept design inputs.',
-    bullets: [
-      'Raster to vector conversion for GIS and design software',
-      'PDF and scanned drawings to AutoCAD DWG/DXF',
-      'Legacy drawing digitisation and QA',
-      'Construction shop drawings for roads and utilities',
-      'Delivery in DWG, DXF, SHP, and GDB formats',
-      'High-volume batch processing available',
-    ],
-    faq: [
-      {
-        question: 'What resolution of scanned drawings do you work with?',
-        answer:
-          'We work with scanned documents from 150 DPI upwards. For best vectorisation accuracy, 300–600 DPI originals are preferred.',
-      },
-      {
-        question: 'Can you handle large batches of legacy drawings?',
-        answer:
-          'Yes. We regularly process thousands of sheets per project with structured QA workflows to maintain consistency across the dataset.',
-      },
-    ],
-  },
-  // ── Software sub-services ────────────────────────────────────────────────────
+  // ── Software ─────────────────────────────────────────────────────────────────
   {
     id: 'software-solutions',
     name: 'Software Solutions',
@@ -549,7 +383,98 @@ export const services = [
     ],
   },
 
-  // ── Financial Services sub-services ──────────────────────────────────────────
+  // ── Education ────────────────────────────────────────────────────────────────
+  {
+    id: 'educational-solutions',
+    name: 'Educational Solutions',
+    tagline: 'A modern LMS built for schools, colleges, and universities',
+    category: 'education',
+    isCategoryLanding: true,
+    lmsAppUrl: 'https://your-lms-app-url.com',
+    demos: [
+      {
+        title: 'Math Quiz Demo',
+        description: 'Test your knowledge of Mathematics.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/b5e52feb-c322-4ad3-a8d3-7fdc7facf52a',
+      },
+      {
+        title: 'CS Quiz Demo',
+        description: 'Test your knowledge of Computer Science.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/c966a50f-d17f-41ee-b186-c11e6bb4edee',
+      },
+      {
+        title: 'Science Quiz Demo',
+        description: 'Test your knowledge of General Science.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/6a885986-c77c-47fd-bb6c-bcdfc2580f5f',
+      },
+    ],
+    description:
+      'RPL Solutions delivers a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision. From live class scheduling to automated grading, every feature is built to reduce administrative overhead and put the focus back on teaching.',
+    subServices: [
+      { id: 'educational-solutions', name: 'LMS Platform',   tagline: 'Full-featured learning management system for institutions' },
+      { id: 'online-classes',        name: 'Online Classes', tagline: 'Live and recorded virtual classrooms for any scale' },
+    ],
+    bullets: [
+      'Course Management - organise lessons, media, and custom learning paths',
+      'Assessment & Grading - quizzes, auto-grading, and progress dashboards',
+      'Communication Tools - forums, messaging, and integrated video conferencing',
+      'Analytics & Reporting - learner engagement insights and at-risk alerts',
+    ],
+    faq: [
+      {
+        question: 'Who is this LMS designed for?',
+        answer: 'Our LMS is built for K-12 schools, colleges, universities, and corporate training programmes - any organisation that needs a structured, scalable platform for course delivery and learner management.',
+      },
+      {
+        question: 'Can instructors build their own courses on the platform?',
+        answer: 'Yes. The platform provides an intuitive course builder that supports text, video, PDFs, quizzes, and custom learning paths - no technical expertise required.',
+      },
+      {
+        question: 'How does grading and assessment work?',
+        answer: 'Instructors can create quizzes and assignments with auto-grading or manual review. Results are recorded automatically and visible to both instructors and learners through the progress dashboard.',
+      },
+      {
+        question: 'Is the platform accessible on mobile devices?',
+        answer: 'Yes. The LMS is fully responsive and works seamlessly on desktops, tablets, and smartphones - so learners can access content from anywhere.',
+      },
+    ],
+  },
+  {
+    id: 'online-classes',
+    name: 'Online Classes',
+    tagline: 'Live and recorded virtual classrooms for every learner',
+    category: 'education',
+    description:
+      'RPL Solutions offers a comprehensive online classes platform that brings the classroom experience directly to learners wherever they are. Whether you need live interactive sessions, pre-recorded video lectures, or a blended learning model, our platform is built to scale from a single course to an institution-wide rollout - with full instructor controls, attendance tracking, and seamless integration with our LMS.',
+    bullets: [
+      'Live virtual classrooms with breakout rooms and interactive whiteboards',
+      'Pre-recorded video lectures with progress tracking and completion certificates',
+      'Scheduling and calendar integration for instructors and students',
+      'Attendance, participation, and engagement reports',
+      'HD video and screen-sharing with low-latency streaming',
+      'Full integration with the RPL Solutions LMS platform',
+    ],
+    faq: [
+      {
+        question: 'Can we run live classes for hundreds of students simultaneously?',
+        answer: 'Yes. Our platform is built for scale and supports large live sessions with moderated Q&A, hand-raise controls, and breakout rooms for group activities.',
+      },
+      {
+        question: 'Do you support pre-recorded content alongside live classes?',
+        answer: 'Absolutely. Instructors can upload recorded sessions and course videos that learners can revisit at any time, making it ideal for a blended or fully asynchronous learning model.',
+      },
+      {
+        question: 'How is attendance tracked for online classes?',
+        answer: 'The platform automatically logs login timestamps, session duration, and participation events, generating attendance reports that instructors and administrators can download.',
+      },
+      {
+        question: 'Does this integrate with the LMS?',
+        answer: 'Yes. Online Classes is fully integrated with our LMS - class recordings, grades, and attendance data sync automatically so everything lives in one place.',
+      },
+    ],
+  },
+
+  // ── Financial ─────────────────────────────────────────────────────────────────
   {
     id: 'financial-services',
     name: 'Financial Services',
@@ -863,92 +788,170 @@ export const services = [
       },
     ],
   },
+  // ── Geospatial ────────────────────────────────────────────────────────────────
   {
-    id: 'educational-solutions',
-    name: 'Educational Solutions',
-    tagline: 'A modern LMS built for schools, colleges, and universities',
-    category: 'education',
-    isCategoryLanding: true,
-    lmsAppUrl: 'https://your-lms-app-url.com',
-    demos: [
-      {
-        title: 'Math Quiz Demo',
-        description: 'Test your knowledge of Mathematics.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/b5e52feb-c322-4ad3-a8d3-7fdc7facf52a',
-      },
-      {
-        title: 'CS Quiz Demo',
-        description: 'Test your knowledge of Computer Science.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/c966a50f-d17f-41ee-b186-c11e6bb4edee',
-      },
-      {
-        title: 'Science Quiz Demo',
-        description: 'Test your knowledge of General Science.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/6a885986-c77c-47fd-bb6c-bcdfc2580f5f',
-      },
-    ],
+    id: 'aerial-triangulation',
+    name: 'Aerial Triangulation',
+    tagline: 'Precise spatial orientation for aerial imagery',
     description:
-      'RPL Solutions delivers a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision. From live class scheduling to automated grading, every feature is built to reduce administrative overhead and put the focus back on teaching.',
-    subServices: [
-      { id: 'educational-solutions', name: 'LMS Platform',   tagline: 'Full-featured learning management system for institutions' },
-      { id: 'online-classes',        name: 'Online Classes', tagline: 'Live and recorded virtual classrooms for any scale' },
-    ],
+      'Aerial triangulation is the process of improving the spatial orientation of aerial imagery, providing exterior orientation parameters and highly accurate 3D coordinates. Our highly automated approach minimises manual intervention while maximising geometric accuracy across large project areas.',
     bullets: [
-      'Course Management - organise lessons, media, and custom learning paths',
-      'Assessment & Grading - quizzes, auto-grading, and progress dashboards',
-      'Communication Tools - forums, messaging, and integrated video conferencing',
-      'Analytics & Reporting - learner engagement insights and at-risk alerts',
+      'Exterior orientation parameters for all imagery blocks',
+      'Highly accurate 3D ground control point integration',
+      'Automated tie-point generation and bundle adjustment',
+      'Quality control reports with residual analysis',
+      'Compatible with UAV, manned aerial, and satellite imagery',
     ],
     faq: [
       {
-        question: 'Who is this LMS designed for?',
-        answer: 'Our LMS is built for K-12 schools, colleges, universities, and corporate training programmes - any organisation that needs a structured, scalable platform for course delivery and learner management.',
+        question: 'What imagery types do you support for aerial triangulation?',
+        answer:
+          'We support UAV (drone), manned aerial, and satellite imagery from all major sensor platforms including Leica, Vexcel, PhaseOne, and DJI.',
       },
       {
-        question: 'Can instructors build their own courses on the platform?',
-        answer: 'Yes. The platform provides an intuitive course builder that supports text, video, PDFs, quizzes, and custom learning paths - no technical expertise required.',
+        question: 'What accuracy can we expect?',
+        answer:
+          'Typical accuracies range from 1–3 × GSD horizontally and 1.5–4 × GSD vertically, depending on flight parameters and GCP distribution.',
       },
       {
-        question: 'How does grading and assessment work?',
-        answer: 'Instructors can create quizzes and assignments with auto-grading or manual review. Results are recorded automatically and visible to both instructors and learners through the progress dashboard.',
-      },
-      {
-        question: 'Is the platform accessible on mobile devices?',
-        answer: 'Yes. The LMS is fully responsive and works seamlessly on desktops, tablets, and smartphones - so learners can access content from anywhere.',
+        question: 'Do you provide QC documentation?',
+        answer:
+          'Yes. Every project is delivered with a full quality control report including residual statistics, point cloud density, and coverage maps.',
       },
     ],
   },
   {
-    id: 'online-classes',
-    name: 'Online Classes',
-    tagline: 'Live and recorded virtual classrooms for every learner',
-    category: 'education',
+    id: 'planimetric-mapping',
+    name: 'Planimetric Mapping',
+    tagline: 'Comprehensive base maps and 3D feature capture',
     description:
-      'RPL Solutions offers a comprehensive online classes platform that brings the classroom experience directly to learners wherever they are. Whether you need live interactive sessions, pre-recorded video lectures, or a blended learning model, our platform is built to scale from a single course to an institution-wide rollout - with full instructor controls, attendance tracking, and seamless integration with our LMS.',
+      'Planimetric mapping produces high-accuracy base maps for engineering, urban planning, and GIS applications. We capture 3D features from stereo models and satellite imagery, delivering comprehensive datasets in industry-standard formats.',
     bullets: [
-      'Live virtual classrooms with breakout rooms and interactive whiteboards',
-      'Pre-recorded video lectures with progress tracking and completion certificates',
-      'Scheduling and calendar integration for instructors and students',
-      'Attendance, participation, and engagement reports',
-      'HD video and screen-sharing with low-latency streaming',
-      'Full integration with the RPL Solutions LMS platform',
+      'Roads, driveways, and parking infrastructure',
+      'Buildings, structures, and site improvements',
+      'Tree lines, vegetation, and natural features',
+      'Hydrological features - streams, ponds, drainage',
+      'Utility infrastructure - poles, manholes, catch basins',
+      'Delivery in DGN, DWG, SHP, and GDB formats',
     ],
     faq: [
       {
-        question: 'Can we run live classes for hundreds of students simultaneously?',
-        answer: 'Yes. Our platform is built for scale and supports large live sessions with moderated Q&A, hand-raise controls, and breakout rooms for group activities.',
+        question: 'What scale of mapping do you produce?',
+        answer:
+          'We produce mapping from 1:500 urban detail to 1:10,000 regional scale, depending on source imagery GSD and project requirements.',
       },
       {
-        question: 'Do you support pre-recorded content alongside live classes?',
-        answer: 'Absolutely. Instructors can upload recorded sessions and course videos that learners can revisit at any time, making it ideal for a blended or fully asynchronous learning model.',
+        question: 'Can you integrate with existing GIS databases?',
+        answer:
+          'Yes. We deliver data structured to match your existing schema and coordinate reference system, ready for direct ingestion into Esri, QGIS, or CAD environments.',
+      },
+    ],
+  },
+  {
+    id: 'gis-services',
+    name: 'GIS Services',
+    tagline: 'Spatial databases, analysis, and custom GIS applications',
+    description:
+      'Our GIS team creates, manages, and analyses geospatial databases for government, infrastructure, and commercial clients. From cadastral mapping to custom application development, we deliver GIS solutions that drive informed decision-making.',
+    bullets: [
+      'Cadastral, parcel, and topographic mapping',
+      'Utility, geological, and LULC databases',
+      'Custom GIS application development',
+      'DBMS design and spatial database management',
+      'Geographic query, analysis, and visualisation',
+      'Integration with Esri ArcGIS, QGIS, and open platforms',
+    ],
+    faq: [
+      {
+        question: 'Can you build a custom web GIS application?',
+        answer:
+          'Yes. We develop web-based GIS applications using Esri ArcGIS Online, GeoPlatform, and open-source stacks (Leaflet, MapLibre) tailored to your workflow.',
       },
       {
-        question: 'How is attendance tracked for online classes?',
-        answer: 'The platform automatically logs login timestamps, session duration, and participation events, generating attendance reports that instructors and administrators can download.',
+        question: 'Do you offer ongoing GIS database maintenance?',
+        answer:
+          'We offer both project-based delivery and ongoing managed GIS services, including regular data updates, QA, and user support.',
+      },
+    ],
+  },
+  {
+    id: 'structural-bim',
+    name: 'Structural BIM',
+    tagline: 'Concrete and steel structure models with design analysis',
+    description:
+      'RPL Solutions delivers detailed structural BIM models for concrete and steel construction projects. Based on client-supplied PDFs, CAD drawings, sketches, or site data, our structural models support design coordination, quantity take-off, and fabrication.',
+    bullets: [
+      'Concrete and steel structural Revit models',
+      'Modeled from PDFs, CAD, sketches, and site images',
+      'Structural observations and design analysis',
+      'Rebar and connection detailing',
+      'Clash detection with architectural and MEP models',
+      'IFC and STRUCAD-compatible export',
+    ],
+    faq: [
+      {
+        question: 'Do you model post-tensioned concrete structures?',
+        answer:
+          'Yes. We model post-tensioned slabs, transfer plates, and complex concrete geometries using Revit with appropriate structural analysis links.',
       },
       {
-        question: 'Does this integrate with the LMS?',
-        answer: 'Yes. Online Classes is fully integrated with our LMS - class recordings, grades, and attendance data sync automatically so everything lives in one place.',
+        question: 'What is your typical turnaround for a structural BIM project?',
+        answer:
+          'For a standard mid-rise building, we deliver preliminary structural models within 2–3 weeks of receiving complete input documentation.',
+      },
+    ],
+  },
+  {
+    id: 'roads-utilities-bim',
+    name: 'Roads & Utilities BIM',
+    tagline: 'Infrastructure corridor BIM for roads and utilities',
+    description:
+      'RPL Solutions delivers full BIM models for road corridors and utility networks, supporting design, construction, and asset management. Our infrastructure models include pavement layers, drainage, earthworks, and complete wet and dry utility systems.',
+    bullets: [
+      'Full roadway corridor: pavement, medians, kerbs, sidewalks',
+      'Earthworks - cut, fill, and grading models',
+      'Traffic signs, signals, and street furniture',
+      'Wet utilities: water supply, sanitary sewer, stormwater',
+      'Dry utilities: MV/LV power, telecom ducting',
+      'Clash detection analysis and reporting',
+    ],
+    faq: [
+      {
+        question: 'What software do you use for infrastructure BIM?',
+        answer:
+          'We use Autodesk Civil 3D, Revit, and InfraWorks for road and utility corridor modeling, with deliverables in RVT, DWG, and IFC formats.',
+      },
+      {
+        question: 'Can you integrate survey data into the corridor model?',
+        answer:
+          'Yes. We incorporate LiDAR point clouds, aerial survey data, and field survey shots into the terrain model underpinning the corridor design.',
+      },
+    ],
+  },
+  {
+    id: 'cad-conversion',
+    name: 'CAD Conversion & Shop Drawings',
+    tagline: 'Raster to vector and PDF to CAD conversion at scale',
+    description:
+      'RPL Solutions converts legacy raster drawings, scanned documents, and PDF files into clean, structured CAD and GIS formats. We also produce construction shop drawings for roads and wet utilities from concept design inputs.',
+    bullets: [
+      'Raster to vector conversion for GIS and design software',
+      'PDF and scanned drawings to AutoCAD DWG/DXF',
+      'Legacy drawing digitisation and QA',
+      'Construction shop drawings for roads and utilities',
+      'Delivery in DWG, DXF, SHP, and GDB formats',
+      'High-volume batch processing available',
+    ],
+    faq: [
+      {
+        question: 'What resolution of scanned drawings do you work with?',
+        answer:
+          'We work with scanned documents from 150 DPI upwards. For best vectorisation accuracy, 300–600 DPI originals are preferred.',
+      },
+      {
+        question: 'Can you handle large batches of legacy drawings?',
+        answer:
+          'Yes. We regularly process thousands of sheets per project with structured QA workflows to maintain consistency across the dataset.',
       },
     ],
   },
@@ -1085,31 +1088,31 @@ export const team = [
     initials: 'PM',
     role: 'Project Managers',
     description:
-      'Overseeing end-to-end project delivery, client communication, and resource planning across all service lines.',
+      'Overseeing end-to-end software delivery, client communication, sprint planning, and resource allocation across all technology service lines.',
   },
   {
-    initials: 'PE',
-    role: 'Process Engineers',
+    initials: 'SD',
+    role: 'Software Developers',
     description:
-      'Designing and optimising the data processing pipelines that underpin every geospatial and BIM deliverable.',
+      'Building scalable web and mobile applications using React, Node.js, Java, .NET, and Flutter - from MVPs to enterprise platforms.',
   },
   {
-    initials: 'GL',
-    role: 'Group Leaders',
+    initials: 'TL',
+    role: 'Tech Leads',
     description:
-      'Leading specialist teams in photogrammetry, LiDAR, BIM, GIS, and CAD with technical depth and mentoring.',
+      'Leading development squads across front-end, back-end, cloud, and DevOps disciplines with deep technical expertise and hands-on mentoring.',
   },
   {
-    initials: 'PR',
-    role: 'Production Team',
+    initials: 'CL',
+    role: 'Cloud & DevOps',
     description:
-      'Skilled technicians and modelers executing high-volume, high-accuracy mapping, BIM, and GIS workflows daily.',
+      'Engineers managing CI/CD pipelines, AWS/Azure/GCP infrastructure, Kubernetes clusters, and 24×7 production monitoring.',
   },
   {
     initials: 'QA',
     role: 'Quality Assurance',
     description:
-      'Independent QA reviewers ensuring every deliverable meets client specifications and internal accuracy standards.',
+      'Independent QA engineers running functional, automation, and performance testing to ensure every release meets the highest quality standards.',
   },
 ]
 
