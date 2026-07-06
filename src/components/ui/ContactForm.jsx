@@ -25,7 +25,11 @@ export default function ContactForm() {
       <div className="bg-dark p-10 flex flex-col justify-between">
         <div>
           <img src={logo} alt="RPL Solutions" className="h-10 w-auto brightness-0 invert" />
-          <p className="text-white/60 text-sm mt-1">{contact.address}</p>
+          <p className="text-white/60 text-sm mt-1 leading-relaxed">
+            RPL Solutions, 8th Floor,<br />
+            Manjeera Majestic Commercial,<br />
+            Opp. JNTU, Hyderabad.
+          </p>
           <div className="mt-8 space-y-4">
             <div>
               <p className="text-white/40 text-xs font-sora uppercase tracking-widest mb-1">Business</p>

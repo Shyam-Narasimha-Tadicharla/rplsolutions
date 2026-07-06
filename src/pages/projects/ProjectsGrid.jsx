@@ -7,7 +7,6 @@ import imgCloud from '@/assets/images/cloudsol.png'
 import imgFinance from '@/assets/images/businesssupport.png'
 import imgAudit from '@/assets/images/audit.png'
 import imgEducation from '@/assets/images/educationalservice.png'
-import imgGeo from '@/assets/images/Aerial Photography AT.png'
 
 const PROJECT_IMAGES = {
   'enterprise-erp-platform':   imgSoftware,
@@ -15,7 +14,6 @@ const PROJECT_IMAGES = {
   'gst-compliance-drive':      imgFinance,
   'startup-incorporation':     imgAudit,
   'university-lms-rollout':    imgEducation,
-  'uav-mapping-au':            imgGeo,
 }
 
 export default function ProjectsGrid() {
@@ -31,7 +29,7 @@ export default function ProjectsGrid() {
         <SectionHeading
           label="Case Studies"
           title="Selected Projects"
-          subtitle="A cross-section of our work spanning software development, financial services, education technology, and geospatial solutions."
+          subtitle="A cross-section of our work spanning software development, financial services, and education technology."
           center
           dark
           labelColor="text-gray-500"

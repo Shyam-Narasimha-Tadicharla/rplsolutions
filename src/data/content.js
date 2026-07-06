@@ -51,7 +51,7 @@ export const stats = [
   { label: 'Projects Delivered', value: '500+' },
   { label: 'Global Clients', value: '50+' },
   { label: 'Team Members', value: '100+' },
-  { label: 'Service Domains', value: '5' },
+  { label: 'Service Domains', value: '4' },
 ]
 
 // ── Service Highlights (Home page grid - 4 cards) ────────────────────────────
@@ -98,15 +98,6 @@ export const serviceHighlights = [
     description:
       'A purpose-built Learning Management System for K-12 schools, colleges, and universities - streamlining course delivery, assessments, and learner analytics.',
     href: '/services/educational-solutions',
-  },
-  // Geospatial (1)
-  {
-    id: 'geospatial',
-    icon: Map,
-    title: 'Geospatial & BIM',
-    description:
-      'Photogrammetric mapping, LiDAR processing, BIM modeling, and GIS services for infrastructure and engineering projects worldwide.',
-    href: '/services/aerial-triangulation',
   },
 ]
 
@@ -788,173 +779,6 @@ export const services = [
       },
     ],
   },
-  // ── Geospatial ────────────────────────────────────────────────────────────────
-  {
-    id: 'aerial-triangulation',
-    name: 'Aerial Triangulation',
-    tagline: 'Precise spatial orientation for aerial imagery',
-    description:
-      'Aerial triangulation is the process of improving the spatial orientation of aerial imagery, providing exterior orientation parameters and highly accurate 3D coordinates. Our highly automated approach minimises manual intervention while maximising geometric accuracy across large project areas.',
-    bullets: [
-      'Exterior orientation parameters for all imagery blocks',
-      'Highly accurate 3D ground control point integration',
-      'Automated tie-point generation and bundle adjustment',
-      'Quality control reports with residual analysis',
-      'Compatible with UAV, manned aerial, and satellite imagery',
-    ],
-    faq: [
-      {
-        question: 'What imagery types do you support for aerial triangulation?',
-        answer:
-          'We support UAV (drone), manned aerial, and satellite imagery from all major sensor platforms including Leica, Vexcel, PhaseOne, and DJI.',
-      },
-      {
-        question: 'What accuracy can we expect?',
-        answer:
-          'Typical accuracies range from 1–3 × GSD horizontally and 1.5–4 × GSD vertically, depending on flight parameters and GCP distribution.',
-      },
-      {
-        question: 'Do you provide QC documentation?',
-        answer:
-          'Yes. Every project is delivered with a full quality control report including residual statistics, point cloud density, and coverage maps.',
-      },
-    ],
-  },
-  {
-    id: 'planimetric-mapping',
-    name: 'Planimetric Mapping',
-    tagline: 'Comprehensive base maps and 3D feature capture',
-    description:
-      'Planimetric mapping produces high-accuracy base maps for engineering, urban planning, and GIS applications. We capture 3D features from stereo models and satellite imagery, delivering comprehensive datasets in industry-standard formats.',
-    bullets: [
-      'Roads, driveways, and parking infrastructure',
-      'Buildings, structures, and site improvements',
-      'Tree lines, vegetation, and natural features',
-      'Hydrological features - streams, ponds, drainage',
-      'Utility infrastructure - poles, manholes, catch basins',
-      'Delivery in DGN, DWG, SHP, and GDB formats',
-    ],
-    faq: [
-      {
-        question: 'What scale of mapping do you produce?',
-        answer:
-          'We produce mapping from 1:500 urban detail to 1:10,000 regional scale, depending on source imagery GSD and project requirements.',
-      },
-      {
-        question: 'Can you integrate with existing GIS databases?',
-        answer:
-          'Yes. We deliver data structured to match your existing schema and coordinate reference system, ready for direct ingestion into Esri, QGIS, or CAD environments.',
-      },
-    ],
-  },
-  {
-    id: 'gis-services',
-    name: 'GIS Services',
-    tagline: 'Spatial databases, analysis, and custom GIS applications',
-    description:
-      'Our GIS team creates, manages, and analyses geospatial databases for government, infrastructure, and commercial clients. From cadastral mapping to custom application development, we deliver GIS solutions that drive informed decision-making.',
-    bullets: [
-      'Cadastral, parcel, and topographic mapping',
-      'Utility, geological, and LULC databases',
-      'Custom GIS application development',
-      'DBMS design and spatial database management',
-      'Geographic query, analysis, and visualisation',
-      'Integration with Esri ArcGIS, QGIS, and open platforms',
-    ],
-    faq: [
-      {
-        question: 'Can you build a custom web GIS application?',
-        answer:
-          'Yes. We develop web-based GIS applications using Esri ArcGIS Online, GeoPlatform, and open-source stacks (Leaflet, MapLibre) tailored to your workflow.',
-      },
-      {
-        question: 'Do you offer ongoing GIS database maintenance?',
-        answer:
-          'We offer both project-based delivery and ongoing managed GIS services, including regular data updates, QA, and user support.',
-      },
-    ],
-  },
-  {
-    id: 'structural-bim',
-    name: 'Structural BIM',
-    tagline: 'Concrete and steel structure models with design analysis',
-    description:
-      'RPL Solutions delivers detailed structural BIM models for concrete and steel construction projects. Based on client-supplied PDFs, CAD drawings, sketches, or site data, our structural models support design coordination, quantity take-off, and fabrication.',
-    bullets: [
-      'Concrete and steel structural Revit models',
-      'Modeled from PDFs, CAD, sketches, and site images',
-      'Structural observations and design analysis',
-      'Rebar and connection detailing',
-      'Clash detection with architectural and MEP models',
-      'IFC and STRUCAD-compatible export',
-    ],
-    faq: [
-      {
-        question: 'Do you model post-tensioned concrete structures?',
-        answer:
-          'Yes. We model post-tensioned slabs, transfer plates, and complex concrete geometries using Revit with appropriate structural analysis links.',
-      },
-      {
-        question: 'What is your typical turnaround for a structural BIM project?',
-        answer:
-          'For a standard mid-rise building, we deliver preliminary structural models within 2–3 weeks of receiving complete input documentation.',
-      },
-    ],
-  },
-  {
-    id: 'roads-utilities-bim',
-    name: 'Roads & Utilities BIM',
-    tagline: 'Infrastructure corridor BIM for roads and utilities',
-    description:
-      'RPL Solutions delivers full BIM models for road corridors and utility networks, supporting design, construction, and asset management. Our infrastructure models include pavement layers, drainage, earthworks, and complete wet and dry utility systems.',
-    bullets: [
-      'Full roadway corridor: pavement, medians, kerbs, sidewalks',
-      'Earthworks - cut, fill, and grading models',
-      'Traffic signs, signals, and street furniture',
-      'Wet utilities: water supply, sanitary sewer, stormwater',
-      'Dry utilities: MV/LV power, telecom ducting',
-      'Clash detection analysis and reporting',
-    ],
-    faq: [
-      {
-        question: 'What software do you use for infrastructure BIM?',
-        answer:
-          'We use Autodesk Civil 3D, Revit, and InfraWorks for road and utility corridor modeling, with deliverables in RVT, DWG, and IFC formats.',
-      },
-      {
-        question: 'Can you integrate survey data into the corridor model?',
-        answer:
-          'Yes. We incorporate LiDAR point clouds, aerial survey data, and field survey shots into the terrain model underpinning the corridor design.',
-      },
-    ],
-  },
-  {
-    id: 'cad-conversion',
-    name: 'CAD Conversion & Shop Drawings',
-    tagline: 'Raster to vector and PDF to CAD conversion at scale',
-    description:
-      'RPL Solutions converts legacy raster drawings, scanned documents, and PDF files into clean, structured CAD and GIS formats. We also produce construction shop drawings for roads and wet utilities from concept design inputs.',
-    bullets: [
-      'Raster to vector conversion for GIS and design software',
-      'PDF and scanned drawings to AutoCAD DWG/DXF',
-      'Legacy drawing digitisation and QA',
-      'Construction shop drawings for roads and utilities',
-      'Delivery in DWG, DXF, SHP, and GDB formats',
-      'High-volume batch processing available',
-    ],
-    faq: [
-      {
-        question: 'What resolution of scanned drawings do you work with?',
-        answer:
-          'We work with scanned documents from 150 DPI upwards. For best vectorisation accuracy, 300–600 DPI originals are preferred.',
-      },
-      {
-        question: 'Can you handle large batches of legacy drawings?',
-        answer:
-          'Yes. We regularly process thousands of sheets per project with structured QA workflows to maintain consistency across the dataset.',
-      },
-    ],
-  },
 ]
 
 // ── Projects ──────────────────────────────────────────────────────────────────
@@ -995,30 +819,23 @@ export const projects = [
     description:
       'Deployed our LMS platform across a 3,000-student university, onboarding 120 faculty members and integrating live class scheduling and automated grading.',
   },
-  {
-    id: 'uav-mapping-au',
-    title: 'UAV Photogrammetric Mapping',
-    sector: 'Geospatial',
-    description:
-      'Large-area UAV mapping campaign producing 5 cm GSD orthophotos and DTM for a regional planning authority across 1,200 km².',
-  },
 ]
 
 // ── Industries ────────────────────────────────────────────────────────────────
 export const industries = [
-  { icon: Globe2,        title: 'Geospatial & Surveying' },
-  { icon: HomeIcon,      title: 'Residential & Commercial' },
+  { icon: Cpu,           title: 'Technology & Software' },
+  { icon: GraduationCap, title: 'Education' },
+  { icon: BadgeDollarSign, title: 'Finance & Compliance' },
+  { icon: HomeIcon,      title: 'Real Estate & RERA' },
   { icon: Zap,           title: 'Power & Energy' },
   { icon: Radio,         title: 'Telecom' },
-  { icon: Flame,         title: 'Oil & Gas' },
   { icon: Construction,  title: 'Infrastructure' },
-  { icon: Cpu,           title: 'Technology & Software' },
 ]
 
 // ── About ─────────────────────────────────────────────────────────────────────
 export const about = {
   intro:
-    'RPL Solutions is a technology-first company headquartered in Hyderabad, delivering custom software, enterprise platforms, and an LMS for modern education - alongside financial & compliance services and specialist geospatial solutions. Our cross-domain teams work with startups, SMEs, educational institutions, and government clients across India and internationally.',
+    'RPL Solutions is a technology-first company headquartered in Hyderabad, delivering custom software, enterprise platforms, and an LMS for modern education - alongside comprehensive financial & compliance services. Our cross-domain teams work with startups, SMEs, educational institutions, and corporate clients across India and internationally.',
   overview: [
     {
       heading: 'Software & Technology',
@@ -1050,7 +867,7 @@ export const about = {
         '100+ skilled professionals',
         'Clients in 15+ countries',
         'ISO-aligned quality processes',
-        'Geospatial & BIM capabilities retained',
+        'Serving 4 core service domains',
       ],
     },
   ],
@@ -1059,25 +876,25 @@ export const about = {
       icon: Award,
       title: 'Our Mission',
       description:
-        "To deliver precise, reliable geospatial and BIM solutions that empower clients to design, build, and manage the world's infrastructure with confidence.",
+        'To deliver innovative, reliable software and professional services that empower businesses, institutions, and individuals to grow with confidence.',
     },
     {
       icon: Globe2,
       title: 'Our Vision',
       description:
-        'To be the most trusted geospatial and BIM partner for infrastructure projects worldwide, recognised for technical excellence and unwavering quality.',
+        'To be the most trusted technology and professional services partner for organisations across India and globally, recognised for quality and integrity.',
     },
     {
       icon: Shield,
       title: 'Our Values',
       description:
-        'Accuracy, integrity, and client partnership. We hold ourselves to the highest standards of data quality and professional conduct on every project.',
+        'Accuracy, integrity, and client partnership. We hold ourselves to the highest standards of quality and professional conduct on every engagement.',
     },
     {
       icon: Users,
       title: 'Our Culture',
       description:
-        'A collaborative, knowledge-sharing environment where experienced engineers and fresh graduates work side by side on globally significant projects.',
+        'A collaborative, knowledge-sharing environment where experienced professionals and fresh talent work side by side to deliver real impact for clients.',
     },
   ],
 }
@@ -1233,7 +1050,7 @@ export const jobs = [
 
 // ── Contact ───────────────────────────────────────────────────────────────────
 export const contact = {
-  address: 'Hyderabad, Telangana, India',
+  address: 'RPL Solutions, 8th Floor, Manjeera Majestic Commercial, Opp. JNTU, Hyderabad.',
   businessEmail: 'business@rplsolutions.com',
   businessPhone: '+91 00000 00000',
   careersEmail: 'careers@rplsolutions.com',

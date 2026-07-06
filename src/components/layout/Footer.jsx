@@ -7,7 +7,6 @@ const FOOTER_SERVICES = [
   { name: 'Software Solutions',     href: '/services/software-solutions'     },
   { name: 'Financial Services',     href: '/services/financial-services'     },
   { name: 'Educational Solutions',  href: '/services/educational-solutions'  },
-  { name: 'Geospatial & BIM',       href: '/services/aerial-triangulation'   },
 ]
 
 export default function Footer() {
@@ -24,8 +23,10 @@ export default function Footer() {
               <img src={logo} alt="RPL Solutions" className="h-9 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
-              {contact.address}<br />
-              Software · Education · Finance · Geospatial
+              RPL Solutions, 8th Floor,<br />
+              Manjeera Majestic Commercial,<br />
+              Opp. JNTU, Hyderabad.<br />
+              Software · Education · Finance
             </p>
             <div className="flex gap-4">
               <a href={contact.social.linkedin} aria-label="LinkedIn" target="_blank" rel="noreferrer"

@@ -12,8 +12,6 @@ export default function ServicesSection() {
     { card: 'bg-teal-50 border-teal-100',     icon: 'bg-teal-600 text-white',     title: 'text-teal-900'    },
     // Education x1 - sky
     { card: 'bg-sky-50 border-sky-100',       icon: 'bg-sky-600 text-white',      title: 'text-sky-900'     },
-    // Geospatial x1 - amber/orange
-    { card: 'bg-amber-50 border-amber-100',   icon: 'bg-amber-500 text-white',    title: 'text-amber-900'   },
   ]
 
   return (
@@ -22,7 +20,7 @@ export default function ServicesSection() {
         <SectionHeading
           label="What We Do"
           title="Our Core Services"
-          subtitle="From custom software and LMS platforms to financial advisory and geospatial services - we deliver end-to-end technology and professional solutions."
+          subtitle="From custom software and LMS platforms to financial advisory - we deliver end-to-end technology and professional solutions."
           center
           dark
         />

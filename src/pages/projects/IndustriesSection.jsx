@@ -18,7 +18,7 @@ export default function IndustriesSection() {
         <SectionHeading
           label="Sectors We Serve"
           title="Industries We Work In"
-          subtitle="Our expertise spans a wide range of industries, each with unique geospatial and BIM requirements."
+          subtitle="Our expertise spans a wide range of industries, each served with tailored technology and professional solutions."
           center
           dark
           labelColor="text-gray-500"

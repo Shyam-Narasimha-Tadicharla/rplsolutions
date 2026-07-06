@@ -5,15 +5,6 @@ import { cn } from '@/lib/utils'
 import ShinyButton from '@/components/ui/ShinyButton'
 import logo from '@/assets/images/rpl-logo-design.webp'
 
-const geospatialLinks = [
-  { label: 'Aerial Triangulation',  href: '/services/aerial-triangulation' },
-  { label: 'Planimetric Mapping',   href: '/services/planimetric-mapping' },
-  { label: 'GIS Services',          href: '/services/gis-services' },
-  { label: 'Structural BIM',        href: '/services/structural-bim' },
-  { label: 'Roads & Utilities BIM', href: '/services/roads-utilities-bim' },
-  { label: 'CAD Conversion',        href: '/services/cad-conversion' },
-]
-
 const educationalLinks = [
   { label: 'LMS Platform',    href: '/services/educational-solutions' },
   { label: 'Online Classes',  href: '/services/online-classes' },
@@ -87,39 +78,22 @@ function ServicesMegaMenu({ onClose }) {
           ))}
         </div>
       </div>
-      {/* Educational Solutions + Geospatial & BIM side by side */}
-      <div className="grid grid-cols-2 divide-x divide-gray-100">
-        {/* Educational Solutions */}
-        <div className="p-4">
-          <Link
-            to="/services/educational-solutions"
-            onClick={onClose}
-            className="text-xs font-sora font-bold text-sky-700 uppercase tracking-widest px-2 mb-2 block hover:text-sky-900 transition-colors"
-          >
-            Educational Solutions ↗
-          </Link>
+      {/* Educational Solutions */}
+      <div className="p-4 border-t border-gray-100">
+        <Link
+          to="/services/educational-solutions"
+          onClick={onClose}
+          className="text-xs font-sora font-bold text-sky-700 uppercase tracking-widest px-2 mb-2 block hover:text-sky-900 transition-colors"
+        >
+          Educational Solutions ↗
+        </Link>
+        <div className="flex gap-2">
           {educationalLinks.map((l) => (
             <Link
               key={l.href}
               to={l.href}
               onClick={onClose}
               className="block px-3 py-1.5 text-sm text-muted hover:text-sky-700 hover:bg-sky-50 rounded-lg transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
-        </div>
-        {/* Geospatial & BIM */}
-        <div className="p-4">
-          <p className="text-xs font-sora font-bold text-primary uppercase tracking-widest px-2 mb-2">
-            Geospatial & BIM
-          </p>
-          {geospatialLinks.map((l) => (
-            <Link
-              key={l.href}
-              to={l.href}
-              onClick={onClose}
-              className="block px-3 py-1.5 text-sm text-muted hover:text-primary hover:bg-surface rounded-lg transition-colors"
             >
               {l.label}
             </Link>
@@ -162,7 +136,6 @@ function ServicesDropdown() {
 // ── Mobile services accordion ─────────────────────────────────────────────────
 function MobileServicesAccordion({ onClose }) {
   const [topOpen, setTopOpen] = useState(false)
-  const [geoOpen, setGeoOpen] = useState(false)
   const [swOpen, setSwOpen]   = useState(false)
   const [finOpen, setFinOpen] = useState(false)
   const [eduOpen, setEduOpen] = useState(false)
@@ -248,25 +221,6 @@ function MobileServicesAccordion({ onClose }) {
             )}
           </div>
 
-          {/* Geospatial & BIM sub-group */}
-          <div className="pt-1 border-t border-gray-100">
-            <button
-              onClick={() => setGeoOpen(!geoOpen)}
-              className="flex items-center justify-between w-full py-1.5 text-sm font-sora font-semibold text-primary/80"
-            >
-              Geospatial & BIM
-              <ChevronDown size={12} className={cn('transition-transform duration-200', geoOpen && 'rotate-180')} />
-            </button>
-            {geoOpen && (
-              <div className="pl-3 space-y-1">
-                {geospatialLinks.map((l) => (
-                  <Link key={l.href} to={l.href} className="block py-1.5 text-sm text-muted hover:text-primary transition-colors" onClick={onClose}>
-                    {l.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
       )}
     </div>
