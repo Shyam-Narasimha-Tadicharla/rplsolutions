@@ -1,15 +1,5 @@
 import ShinyButton from '@/components/ui/ShinyButton'
 
-// Map service IDs to the real images we have
-import imgAT from '@/assets/images/AT.jpg'
-import imgAerialAT from '@/assets/images/Aerial Photography AT.png'
-import imgOrtho from '@/assets/images/ORTHO PHOTO.jpg'
-import imgGIS from '@/assets/images/GIS DATA CONVERSION.jpg'
-import imgStructuralBIM from '@/assets/images/Structural-BIM-image.jpeg'
-import imgPlanimetric from '@/assets/images/Plainmetric-image.jpeg'
-import imgRoadsUtilities from '@/assets/images/Roads-and-Utility-BIM-image.jpeg'
-
-// New images
 import imgSoftware from '@/assets/images/software.png'
 import imgCloud from '@/assets/images/cloud.png'
 import imgCloudSol from '@/assets/images/cloudsol.png'
@@ -29,14 +19,6 @@ import imgEducation from '@/assets/images/educationalservice.png'
 const PLACEHOLDER = 'https://placehold.co/800x500/1B3A5C/FFFFFF?text=RPL+Solutions'
 
 const SERVICE_IMAGES = {
-  // Geospatial & BIM
-  'aerial-triangulation': imgAerialAT,
-  'planimetric-mapping':  imgPlanimetric,
-  'gis-services':         imgGIS,
-  'structural-bim':       imgStructuralBIM,
-  'roads-utilities-bim':  imgRoadsUtilities,
-  'scan-to-bim':          imgAT,
-  'cad-conversion':       imgOrtho,
   // Software
   'software-development':    imgSoftware,
   'digital-cloud-solutions': imgCloudSol,
