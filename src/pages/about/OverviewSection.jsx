@@ -9,7 +9,7 @@ export default function OverviewSection() {
         <SectionHeading
           label="Company Overview"
           title="What We Offer"
-          subtitle="A multi-disciplinary team delivering software, education, financial, and geospatial services at scale."
+          subtitle="A multi-disciplinary team delivering software, education, and financial services at scale."
           center
           dark
           labelColor="text-purple-600"

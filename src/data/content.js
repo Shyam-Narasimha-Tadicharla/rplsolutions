@@ -47,11 +47,11 @@ import {
 
 // ── Stats ────────────────────────────────────────────────────────────────────
 export const stats = [
-  { label: 'Years Experience', value: '20+' },
+  { label: 'Years Experience', value: '10+' },
   { label: 'Projects Delivered', value: '500+' },
   { label: 'Global Clients', value: '50+' },
   { label: 'Team Members', value: '100+' },
-  { label: 'Service Domains', value: '4' },
+  { label: 'Est.', value: '2016' },
 ]
 
 // ── Service Highlights (Home page grid - 4 cards) ────────────────────────────
@@ -381,7 +381,7 @@ export const services = [
     tagline: 'A modern LMS built for schools, colleges, and universities',
     category: 'education',
     isCategoryLanding: true,
-    lmsAppUrl: 'https://your-lms-app-url.com',
+    lmsAppUrl: 'https://rpl-sol.vercel.app/index.html',
     demos: [
       {
         title: 'Math Quiz Demo',
@@ -862,8 +862,8 @@ export const about = {
     {
       heading: 'Company Info',
       items: [
-        'Founded: Hyderabad, India',
-        '20+ years of industry experience',
+        'Founded: Hyderabad, India (Est. 2016)',
+        '10+ years of industry experience',
         '100+ skilled professionals',
         'Clients in 15+ countries',
         'ISO-aligned quality processes',
