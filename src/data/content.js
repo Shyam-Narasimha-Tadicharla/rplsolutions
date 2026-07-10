@@ -384,19 +384,24 @@ export const services = [
     lmsAppUrl: 'https://rpl-sol.vercel.app/index.html',
     demos: [
       {
-        title: 'Math Quiz Demo',
-        description: 'Test your knowledge of Mathematics.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/f0a67d42-636b-4a54-ae02-111e795060a3',
+        title: 'MCQ Test Demo',
+        description: 'Try a multiple choice question format test.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/d8afce17-e215-4017-bc55-c53c8a62fa2c',
       },
       {
-        title: 'Sample Demo',
-        description: 'Test your knowledge of Computer Science.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/5dee4772-cc6a-4df3-a35f-41dfcf1c7148',
+        title: 'MSQ Test Demo',
+        description: 'Try a multiple select question format test.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/407b7ff2-361c-44b7-b59f-ebabae8f1666',
       },
       {
-        title: 'Science Quiz Demo',
-        description: 'Test your knowledge of General Science.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/0ce37aa9-4d5e-4658-80b8-3d438594b4f2',
+        title: 'Kids Test Demo',
+        description: 'A fun, beginner-friendly test for younger learners.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/abf3b2f3-9b6d-4bd2-bd8a-6d12e9f80cce',
+      },
+      {
+        title: 'Fill the Blanks Test Demo',
+        description: 'Try a fill-in-the-blank format assessment.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/5c1b7168-6c97-41f2-a74a-431737568e1f',
       },
     ],
     description:

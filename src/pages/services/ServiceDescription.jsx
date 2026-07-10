@@ -93,6 +93,30 @@ export default function ServiceDescription({ service }) {
             <p className="text-gray-600 text-base mb-8 leading-relaxed">
               Explore the RPL Solutions exam and assessment platform — live and ready to use.
             </p>
+
+            {/* Demo cards */}
+            {service.demos && service.demos.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                {service.demos.map((demo, i) => (
+                  <a
+                    key={i}
+                    href={demo.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group bg-white rounded-2xl border border-sky-100 p-5 flex flex-col gap-3 shadow-sm hover:shadow-md hover:border-sky-300 transition-all duration-200"
+                  >
+                    <h3 className="font-sora font-bold text-gray-900 text-sm group-hover:text-sky-700 transition-colors">
+                      {demo.title}
+                    </h3>
+                    <p className="text-gray-500 text-xs leading-relaxed flex-1">{demo.description}</p>
+                    <span className="text-sky-600 text-xs font-sora font-semibold">
+                      Start Demo →
+                    </span>
+                  </a>
+                ))}
+              </div>
+            )}
+
             <a
               href={service.lmsAppUrl}
               target="_blank"
