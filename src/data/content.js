@@ -396,7 +396,7 @@ export const services = [
       {
         title: 'Kids Test Demo',
         description: 'A fun, beginner-friendly test for younger learners.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/abf3b2f3-9b6d-4bd2-bd8a-6d12e9f80cce',
+        url: 'https://quizapp-dun-six.vercel.app/preview/b3b45ca4-e348-4a95-8bef-58b4e5d3ef99',
       },
       {
         title: 'Fill the Blanks Test Demo',
