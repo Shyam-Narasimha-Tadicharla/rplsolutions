@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import ShinyButton from '@/components/ui/ShinyButton'
-import logo from '@/assets/images/rpl-logo-design.webp'
+import logo from '@/assets/images/newlogo.png'
 
 const educationalLinks = [
   { label: 'LMS Platform',    href: '/services/educational-solutions' },

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Linkedin, Twitter, Instagram } from 'lucide-react'
 import { contact } from '@/data/content'
-import logo from '@/assets/images/rpl-logo-design.webp'
+import logo from '@/assets/images/newlogo.png'
 
 const FOOTER_SERVICES = [
   { name: 'Software Solutions',     href: '/services/software-solutions'     },
@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Col 1 - Logo, address, social */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <img src={logo} alt="RPL Solutions" className="h-9 w-auto brightness-0 invert" />
+              <img src={logo} alt="RPL Solutions" className="h-9 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               RPL Solutions, 8th Floor,<br />
