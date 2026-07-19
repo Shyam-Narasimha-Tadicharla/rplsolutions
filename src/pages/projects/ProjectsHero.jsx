@@ -1,4 +1,4 @@
-import imgProjects from '@/assets/images/software.png'
+import imgProjects from '@/assets/images/projects.jpeg'
 
 export default function ProjectsHero() {
   return (
@@ -27,7 +27,7 @@ export default function ProjectsHero() {
               Our Projects
             </h1>
             <p className="text-white/70 text-lg leading-relaxed">
-              Delivering software products, LMS platforms, financial services, and geospatial solutions for clients across India and beyond.
+              Delivering software products, LMS platforms, and financial services for clients across India and beyond.
             </p>
           </div>
           <div className="relative">

@@ -23,12 +23,14 @@
   }
 }
 
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 @layer utilities {
   .dot-grid {
     background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
     background-size: 28px 28px;
-  }
-  .pause-on-hover:hover .marquee-inner {
-    animation-play-state: paused;
   }
 }

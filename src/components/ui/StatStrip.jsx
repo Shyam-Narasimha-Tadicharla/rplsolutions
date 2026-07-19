@@ -1,5 +1,5 @@
 export default function StatStrip({ items, variant = 'red' }) {
-  const repeated = [...items, ...items, ...items, ...items]
+  const repeated = [...items, ...items]
 
   const styles = {
     white: {
@@ -25,9 +25,7 @@ export default function StatStrip({ items, variant = 'red' }) {
     >
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: 'marquee 35s linear infinite' }}
-        onMouseEnter={(e) => (e.currentTarget.style.animationPlayState = 'paused')}
-        onMouseLeave={(e) => (e.currentTarget.style.animationPlayState = 'running')}
+        style={{ animation: 'marquee 30s linear infinite' }}
       >
         {repeated.map((item, i) => (
           <span key={i} className="inline-flex items-center gap-2 font-sora px-8 shrink-0">

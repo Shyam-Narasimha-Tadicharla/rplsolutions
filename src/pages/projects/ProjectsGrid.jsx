@@ -2,15 +2,15 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import Gallery from '@/components/ui/Gallery'
 import { projects } from '@/data/content'
 
-import imgSoftware from '@/assets/images/software.png'
-import imgCloud from '@/assets/images/cloudsol.png'
+import imgERP from '@/assets/images/ERP.jpeg'
+import imgCloudMigration from '@/assets/images/Cloud-Migration.jpeg'
 import imgFinance from '@/assets/images/businesssupport.png'
 import imgAudit from '@/assets/images/audit.png'
 import imgEducation from '@/assets/images/educationalservice.png'
 
 const PROJECT_IMAGES = {
-  'enterprise-erp-platform':   imgSoftware,
-  'ecommerce-cloud-migration':  imgCloud,
+  'enterprise-erp-platform':   imgERP,
+  'ecommerce-cloud-migration':  imgCloudMigration,
   'gst-compliance-drive':      imgFinance,
   'startup-incorporation':     imgAudit,
   'university-lms-rollout':    imgEducation,

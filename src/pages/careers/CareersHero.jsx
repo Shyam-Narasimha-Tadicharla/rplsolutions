@@ -1,5 +1,5 @@
 import ShinyButton from '@/components/ui/ShinyButton'
-import imgCareers from '@/assets/images/software.png'
+import imgCareers from '@/assets/images/career.png'
 
 export default function CareersHero() {
   return (
