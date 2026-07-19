@@ -403,6 +403,11 @@ export const services = [
         description: 'Try a fill-in-the-blank format assessment.',
         url: 'https://quizapp-dun-six.vercel.app/preview/5c1b7168-6c97-41f2-a74a-431737568e1f',
       },
+      {
+        title: 'Passage MCQ Demo',
+        description: 'Try a passage-based multiple choice question assessment.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/26d9748a-bfde-4f42-ad3f-d416f15a5f12',
+      },
     ],
     description:
       'RPL Solutions delivers a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision. From live class scheduling to automated grading, every feature is built to reduce administrative overhead and put the focus back on teaching.',
