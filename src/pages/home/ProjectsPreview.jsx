@@ -3,12 +3,12 @@ import Gallery from '@/components/ui/Gallery'
 import ShinyButton from '@/components/ui/ShinyButton'
 import { projects } from '@/data/content'
 
-import imgSoftware from '@/assets/images/software.png'
+import imgERP from '@/assets/images/ERP.jpeg'
 import imgFinance from '@/assets/images/businesssupport.png'
 import imgEducation from '@/assets/images/educationalservice.png'
 
 const HOME_PROJECT_IMAGES = {
-  'enterprise-erp-platform':  imgSoftware,
+  'enterprise-erp-platform':  imgERP,
   'gst-compliance-drive':     imgFinance,
   'university-lms-rollout':   imgEducation,
 }

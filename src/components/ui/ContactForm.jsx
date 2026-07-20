@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Linkedin, Twitter, Instagram, CheckCircle2 } from 'lucide-react'
 import ShinyButton from './ShinyButton'
 import { contact } from '@/data/content'
-import logo from '@/assets/images/rpl-logo-design.webp'
+import logo from '@/assets/images/newlogo.png'
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -24,7 +24,7 @@ export default function ContactForm() {
       {/* Left dark panel */}
       <div className="bg-dark p-10 flex flex-col justify-between">
         <div>
-          <img src={logo} alt="RPL Solutions" className="h-10 w-auto brightness-0 invert" />
+          <img src={logo} alt="RPL Solutions" className="h-10 w-auto" />
           <p className="text-white/60 text-sm mt-1 leading-relaxed">
             RPL Solutions, 8th Floor,<br />
             Manjeera Majestic Commercial,<br />

@@ -26,8 +26,8 @@ const financialLinks = [
   { label: 'Startup & Registrations', href: '/services/startup-registrations' },
   { label: 'Business Support',        href: '/services/business-support' },
   { label: 'Project Finance',         href: '/services/project-finance' },
-  { label: 'Legal & Secretarial',     href: '/services/legal-secretarial' },
-  { label: 'RERA Services',           href: '/services/rera-services' },
+  { label: 'PF & ESI',               href: '/services/pf-esi' },
+  { label: 'PT & TDS Returns',        href: '/services/pt-tds-returns' },
   { label: 'Valuations',              href: '/services/valuations' },
 ]
 

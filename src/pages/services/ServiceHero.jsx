@@ -1,8 +1,7 @@
 import ShinyButton from '@/components/ui/ShinyButton'
 
-import imgSoftware from '@/assets/images/software.png'
+import imgSoftware from '@/assets/images/softdev.png'
 import imgCloud from '@/assets/images/cloud.png'
-import imgCloudSol from '@/assets/images/cloudsol.png'
 import imgITConsul from '@/assets/images/itconsul.png'
 import imgQATesting from '@/assets/images/qatesting.png'
 import imgDigitalMarketing from '@/assets/images/digitalmarketing.png'
@@ -12,7 +11,6 @@ import imgTax from '@/assets/images/tax.png'
 import imgStartup from '@/assets/images/startup.png'
 import imgBusinessSupport from '@/assets/images/businesssupport.png'
 import imgProjectFinancing from '@/assets/images/projectfinancing.png'
-import imgRERA from '@/assets/images/rera.png'
 import imgValuation from '@/assets/images/valuation.png'
 import imgEducation from '@/assets/images/educationalservice.png'
 
@@ -21,7 +19,7 @@ const PLACEHOLDER = 'https://placehold.co/800x500/1B3A5C/FFFFFF?text=RPL+Solutio
 const SERVICE_IMAGES = {
   // Software
   'software-development':    imgSoftware,
-  'digital-cloud-solutions': imgCloudSol,
+  'digital-cloud-solutions': imgCloud,
   'it-consulting':           imgITConsul,
   'qa-testing':              imgQATesting,
   'cloud-services':          imgCloud,
@@ -33,11 +31,11 @@ const SERVICE_IMAGES = {
   'startup-registrations': imgStartup,
   'business-support':      imgBusinessSupport,
   'project-finance':       imgProjectFinancing,
-  'legal-secretarial':     imgAudit,
-  'rera-services':           imgRERA,
-  'valuations':              imgValuation,
-  'educational-solutions':   imgEducation,
-  'online-classes':          imgEducation,
+  'pf-esi':               imgBusinessSupport,
+  'pt-tds-returns':        imgAudit,
+  'valuations':            imgValuation,
+  'educational-solutions': imgEducation,
+  'online-classes':        imgEducation,
 }
 
 const EYEBROW_COLOR = {
