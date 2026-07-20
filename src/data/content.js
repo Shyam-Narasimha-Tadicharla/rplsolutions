@@ -408,6 +408,16 @@ export const services = [
         description: 'Try a passage-based multiple choice question assessment.',
         url: 'https://quizapp-dun-six.vercel.app/preview/26d9748a-bfde-4f42-ad3f-d416f15a5f12',
       },
+      {
+        title: 'Telugu GK Demo',
+        description: 'Try a general knowledge assessment in Telugu.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/545ad7f1-d55e-4ce9-838a-82a43e533004',
+      },
+      {
+        title: 'Hindi GK Demo',
+        description: 'Try a general knowledge assessment in Hindi.',
+        url: 'https://quizapp-dun-six.vercel.app/preview/6ac43ac4-3265-46a9-8ade-204ed9202dee',
+      },
     ],
     description:
       'RPL Solutions delivers a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision. From live class scheduling to automated grading, every feature is built to reduce administrative overhead and put the focus back on teaching.',
