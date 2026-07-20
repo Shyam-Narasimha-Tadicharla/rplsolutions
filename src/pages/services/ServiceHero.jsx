@@ -12,6 +12,8 @@ import imgStartup from '@/assets/images/startup.png'
 import imgBusinessSupport from '@/assets/images/businesssupport.png'
 import imgProjectFinancing from '@/assets/images/projectfinancing.png'
 import imgValuation from '@/assets/images/valuation.png'
+import imgPFESI from '@/assets/images/pfesi.png'
+import imgTDS from '@/assets/images/tds.png'
 import imgEducation from '@/assets/images/educationalservice.png'
 
 const PLACEHOLDER = 'https://placehold.co/800x500/1B3A5C/FFFFFF?text=RPL+Solutions'
@@ -31,8 +33,8 @@ const SERVICE_IMAGES = {
   'startup-registrations': imgStartup,
   'business-support':      imgBusinessSupport,
   'project-finance':       imgProjectFinancing,
-  'pf-esi':               imgBusinessSupport,
-  'pt-tds-returns':        imgAudit,
+  'pf-esi':               imgPFESI,
+  'pt-tds-returns':        imgTDS,
   'valuations':            imgValuation,
   'educational-solutions': imgEducation,
   'online-classes':        imgEducation,
