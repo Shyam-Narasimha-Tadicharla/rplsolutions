@@ -88,10 +88,10 @@ export default function ServiceDescription({ service }) {
               Live Platform
             </p>
             <h2 id="demos-heading" className="font-sora font-bold text-2xl md:text-3xl text-gray-900 mb-4">
-              Try the Platform Yourself
+              Try Xamai yourself
             </h2>
             <p className="text-gray-600 text-base mb-8 leading-relaxed">
-              Explore the RPL Solutions exam and assessment platform — live and ready to use.
+              Experience Xamai's assessments and exams by taking these trials below.
             </p>
 
             {/* Demo cards */}
@@ -118,12 +118,12 @@ export default function ServiceDescription({ service }) {
             )}
 
             <a
-              href={service.lmsAppUrl}
+              href="https://www.xamai.in"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-700 text-white text-sm font-sora font-semibold px-7 py-3 rounded-lg transition-colors duration-200 shadow-md"
             >
-              Visit RPL Exam Site →
+              Visit Xamai →
             </a>
           </div>
         </section>
