@@ -129,7 +129,7 @@ export default function ContactForm() {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="John Smith"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition"
                 />
               </div>
               <div>
@@ -144,7 +144,7 @@ export default function ContactForm() {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="john@company.com"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition"
                 />
               </div>
               <div>
@@ -159,7 +159,7 @@ export default function ContactForm() {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Tell us about your project…"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition resize-none"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition resize-none"
                 />
               </div>
 
