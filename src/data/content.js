@@ -839,10 +839,10 @@ export const projects = [
   },
   {
     id: 'university-lms-rollout',
-    title: 'University LMS Rollout',
+    title: 'Universal LMS Rollout',
     sector: 'Education',
     description:
-      'Deployed our LMS platform across a 3,000-student university, onboarding 120 faculty members and integrating live class scheduling and automated grading.',
+      'Deploying a fully integrated Learning Management System designed for the demands of modern education. Our platform serves K-12 schools, colleges, and universities - giving institutions a single digital hub to manage courses, engage learners, and track outcomes with precision.',
   },
 ]
 

@@ -9,7 +9,7 @@ export default function CorePrinciples() {
         <SectionHeading
           label="Our Foundation"
           title="Mission, Vision & Values"
-          subtitle="The principles that have guided RPL Solutions for over two decades."
+          subtitle="The principles that have guided RPL Solutions for over a decade."
           center
           dark
           labelColor="text-purple-600"
