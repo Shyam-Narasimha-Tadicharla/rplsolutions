@@ -386,37 +386,37 @@ export const services = [
       {
         title: 'MCQ Test Demo',
         description: 'Try a multiple choice question format test.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/d8afce17-e215-4017-bc55-c53c8a62fa2c',
+        url: 'https://lms.xamai.in/preview/d8afce17-e215-4017-bc55-c53c8a62fa2c',
       },
       {
         title: 'MSQ Test Demo',
         description: 'Try a multiple select question format test.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/407b7ff2-361c-44b7-b59f-ebabae8f1666',
+        url: 'https://lms.xamai.in/preview/407b7ff2-361c-44b7-b59f-ebabae8f1666',
       },
       {
         title: 'Kids Test Demo',
         description: 'A fun, beginner-friendly test for younger learners.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/b3b45ca4-e348-4a95-8bef-58b4e5d3ef99',
+        url: 'https://lms.xamai.in/preview/b3b45ca4-e348-4a95-8bef-58b4e5d3ef99',
       },
       {
         title: 'Fill the Blanks Test Demo',
         description: 'Try a fill-in-the-blank format assessment.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/5c1b7168-6c97-41f2-a74a-431737568e1f',
+        url: 'https://lms.xamai.in/preview/5c1b7168-6c97-41f2-a74a-431737568e1f',
       },
       {
         title: 'Passage MCQ Demo',
         description: 'Try a passage-based multiple choice question assessment.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/26d9748a-bfde-4f42-ad3f-d416f15a5f12',
+        url: 'https://lms.xamai.in/preview/26d9748a-bfde-4f42-ad3f-d416f15a5f12',
       },
       {
         title: 'Telugu GK Demo',
         description: 'Try a general knowledge assessment in Telugu.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/545ad7f1-d55e-4ce9-838a-82a43e533004',
+        url: 'https://lms.xamai.in/preview/545ad7f1-d55e-4ce9-838a-82a43e533004',
       },
       {
         title: 'Hindi GK Demo',
         description: 'Try a general knowledge assessment in Hindi.',
-        url: 'https://quizapp-dun-six.vercel.app/preview/6ac43ac4-3265-46a9-8ade-204ed9202dee',
+        url: 'https://lms.xamai.in/preview/6ac43ac4-3265-46a9-8ade-204ed9202dee',
       },
     ],
     description:
