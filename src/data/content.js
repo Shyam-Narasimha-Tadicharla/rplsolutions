@@ -1077,9 +1077,9 @@ export const jobs = [
 export const contact = {
   address: 'RPL Solutions, 8th Floor, Manjeera Majestic Commercial, Opp. JNTU, Hyderabad.',
   businessEmail: 'info@rpl-solutions.com',
-  businessPhone: '+91 00000 00000',
+  businessPhone: '+91 76759 17029',
   careersEmail: 'info@rpl-solutions.com',
-  careersPhone: '+91 00000 00001',
+  careersPhone: '+91 76759 17029',
   social: {
     linkedin: 'https://linkedin.com',
     twitter: 'https://twitter.com',

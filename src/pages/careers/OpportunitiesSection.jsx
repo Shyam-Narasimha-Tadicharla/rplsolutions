@@ -10,7 +10,7 @@ export default function OpportunitiesSection() {
         <SectionHeading
           label="Open Roles"
           title="Current Opportunities"
-          subtitle="Don't see a perfect fit? Email us at careers@rplsolutions.com - we always welcome strong candidates."
+          subtitle="Don't see a perfect fit? Email us at info@rpl-solutions.com - we always welcome strong candidates."
           center
           dark
           labelColor="text-emerald-700"

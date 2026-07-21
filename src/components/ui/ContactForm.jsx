@@ -1,22 +1,51 @@
 import { useState } from 'react'
-import { Linkedin, Twitter, Instagram, CheckCircle2 } from 'lucide-react'
+import emailjs from '@emailjs/browser'
+import { Linkedin, Twitter, Instagram, CheckCircle2, Loader2 } from 'lucide-react'
 import ShinyButton from './ShinyButton'
 import { contact } from '@/data/content'
 import logo from '@/assets/images/newlogo.png'
 
+const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [form, setForm]           = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending]     = useState(false)
+  const [error, setError]         = useState('')
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value })
+    if (error) setError('')
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    console.log('Contact form submission:', form)
-    setSubmitted(true)
-    setForm({ name: '', email: '', message: '' })
+    if (!form.name || !form.email || !form.message) return
+
+    setSending(true)
+    setError('')
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:    form.name,
+          from_email:   form.email,
+          message:      form.message,
+          to_email:     'info@rpl-solutions.com',
+        },
+        EMAILJS_PUBLIC_KEY,
+      )
+      setSubmitted(true)
+      setForm({ name: '', email: '', message: '' })
+    } catch {
+      setError('Something went wrong. Please email us directly at info@rpl-solutions.com')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -133,7 +162,25 @@ export default function ContactForm() {
                   className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition resize-none"
                 />
               </div>
-              <ShinyButton label="Send Message" onClick={handleSubmit} className="w-full justify-center" />
+
+              {error && (
+                <p className="text-red-500 text-xs">{error}</p>
+              )}
+
+              <button
+                type="submit"
+                disabled={sending}
+                className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white text-sm font-sora font-semibold px-7 py-3 rounded-lg transition-colors duration-200 shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {sending ? (
+                  <>
+                    <Loader2 size={16} className="animate-spin" />
+                    Sending…
+                  </>
+                ) : (
+                  'Send Message'
+                )}
+              </button>
             </div>
           </form>
         )}
